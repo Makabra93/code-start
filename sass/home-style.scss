@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&subset=latin-ext');
+
+/* ---- COLORS VARIABLES ---- */
+
+$main-white: #FFFFFF;
+$main-grey: #313332;
+$main-blue: #04C2E3;
+$p-lgray: #909090;
+
+
+* {
+	box-sizing: border-box;	
+	font-family: 'Raleway';
+}
+body {
+	margin: 0 auto;
+}
+
+/* ----HEADER---- */
+
+header {
+	background-color: $main-grey;
+	min-height: 70px;
+	img {
+		height: 65px;
+		padding: 0;
+	}
+	ul {
+ 		float: right;
+  		margin: 0;
+  		padding: 0;
+  		list-style-type: none;
+  		li {
+			display: inline-block;
+			&:first-child {
+				a {
+					color: $main-blue;	
+					&:hover {
+						color: $main-white;	
+					}
+				}
+			}
+  		}
+		a {
+			display: block;
+			text-transform: uppercase;
+			text-decoration: none;
+			line-height: 70px;
+			padding: 0 20px;
+			font-weight: 900;
+			font-size: 20px;
+			color: $main-white;
+			transition: 0.3s;
+			&:hover {
+				background-color: #5F5F5F;
+				color: $main-blue;
+			}
+		}
+  	}
+}
+
+/* ----"HERO" SECTION"---- */
+
+.hero {
+	background: url(https://images.unsplash.com/photo-1505085702750-96d89f461398?dpr=1&auto=format&fit=crop&w=1950&h=&q=60&cs=tinysrgb&crop=) center/cover;
+	width: 100%;
+	height: 500px;
+	.slogan {
+		background-color: rgba(0, 0, 0, 0.5);
+		float: right;
+		width: 900px;
+		padding: 0 5px;
+  		margin-top: 150px;
+  		h1 {
+  			text-transform: uppercase; 
+			font-size: 42px;
+			font-weight: 500;
+			padding-left: 40px;	
+			span {
+				display: block;
+				font-weight: 900;	
+			}
+  		}
+	} 
+}
+
+/* ----"PROFITS" SECTION---- */
+.profits {
+	.icon {
+		font-size: 60px;
+		color: $main-white;
+		background-color: $main-grey;
+		padding: 35px;
+		border-radius: 15px;
+		margin-bottom: 10px;
+		transition: 0.5s;
+	}
+	.profit {
+		&:hover {
+			.icon {
+				background-color: $main-blue;
+				transform: scale(1.10);		
+			}
+			h2 {
+				color: 	$main-blue;
+			}
+		}
+		h2 {
+			text-transform: uppercase;
+			transition: 0.5s;
+			color: #03282E;
+		}
+		p {
+			line-height: 26px;	
+			color: $p-lgray;
+		}
+	}
+}
+/* ----"FEATURED" SECTION---- */
+
+.featured {
+	h1 {
+		font: 900 55px 'Raleway' ;
+		color: $main-grey;
+	}
+	p {
+		color: $p-lgray;	
+		font-size: 24px;
+	}
+}
+/*----"GALLERY" SECTION---- */
+
+.gallery {
+	[class^="col-"] {
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		min-height: 200px;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+	.layer {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		text-align: center;
+		padding-top: 60px;
+		font-size: 22px;
+		background-color: rgba(0, 0, 0, 0.5);
+		background-size: cover;
+		margin-top: -200px;
+		transition: 0.3s linear;
+	}
+	.fa-lg {
+		margin: 20px 30px;	
+		background-color: rgba(96, 96, 96, 0.8);
+		padding: 7px;
+		border-radius: 7px;
+		border: 1px solid;
+		width: 45px;
+	}
+	.fall {
+		&:hover {
+			div {
+				margin: 0;
+			}
+		}
+	}	
+
+	.pic-1 {
+		background-image: url(http://www.ilikewallpaper.net/ipad-air-wallpapers/download/23766/Sunset-Lake-Night-Dark-Nature-ipad-air-wallpaper-ilikewallpaper_com_1024.jpg);
+	}
+	.pic-2 {
+		background-image: url(http://all4desktop.com/data_images/1440%20x%20900/4230863-private-dock-sunset.jpg);
+	}
+	.pic-3 {
+		background-image: url(https://res.cloudinary.com/clippings/image/upload/t_small/f_auto/v1/products/etoile-wallpaper-sample-sian-elin-clippings-1199041.jpg);
+	}
+	.pic-4 {
+		background-image: url(https://sits-pod37.demandware.net/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dwb4255b93/images/large/17267_5.jpg?sw=533&sh=533&sm=fit);
+	}
+	.pic-5 {
+		background-image: url(https://pro.keepvid.com/images/en/4k/kwallpaper-25.jpg);
+	}
+	.pic-6 {
+		background-image: url(https://houseoffraser.scene7.com/is/image/HOF/G_5011583308303_50_20160729); /* heavy file */
+	}
+	.pic-7 {
+		background-image: url(https://ae01.alicdn.com/kf/HTB1HL5JIFXXXXalapXXq6xXFXXXq/New-3D-font-b-Iron-b-font-Man-Mural-font-b-wallpaper-b-font-full-Wall.jpg);
+	}
+	.pic-8 {
+		background-image: url(https://secure.img2-fg.wfcdn.com/im/87612486/resize-h400-w400%5Ecompr-r85/1382/13829046/Dunes+Brick+Paintable+31.4%22+x+24.6%22+Abstract+3D+Embossed+6+Piece+Panel+Wallpaper+%28Set+of+6%29.jpg);
+	}
+	.pic-9 {
+		background-image: url(http://www.ilikewallpaper.net/ipad-air-wallpapers/download/12366/Pastel-Sunset-iPad-4-wallpaper-ilikewallpaper_com.jpg);
+	}
+	.pic-10 {
+		background-image: url(http://www.aneesoft.com/images/tutorials/ipad/free-ipad-wallpapers-fishes.jpg);
+	}
+}
+
+/* ---- "WORKERS" SECTION ---- */
+
+.workers {
+	.radial {
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+		max-width: 250px;
+		max-height: 250px;
+		margin: 0 auto;
+		> .layer p {
+			font-size: 30px;
+			line-height: 200px;
+		}
+	}
+	.layer {
+		position: absolute;
+		width: 100%;
+		height: 250px;
+		background-color: rgba(0, 0, 0, 0);
+		color: rgba(0, 0, 0, 0);	
+	}
+	img {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.worker {
+		&:hover {
+			.layer0 {
+				background-color: rgba(0, 0, 0, 0.5);	
+				color: $main-white;
+			}
+			.layer1 {
+				@extend .layer0;
+				background-color: rgba(125, 195, 240, 0.5);
+			}	
+			.layer2 {
+				@extend .layer0;
+				background-color: rgba(255, 43, 43, 0.5);
+			}	
+			.layer3 {
+				@extend .layer0;
+				background-color: rgba(255, 219, 43, 0.5);
+			}
+		}
+	}
+}
+
+/* ----"BANNER" SECTION----*/
+
+.banner {
+	background-image: url(https://static.pexels.com/photos/355654/pexels-photo-355654.jpeg);	
+	background-size: cover;
+	max-height: 500px;
+	overflow: hidden;
+	.ban-img {
+		position: relative;
+    	height: 450px;
+    	padding: 0;
+    	margin: 0;
+    	img {
+			position: absolute;
+    		width: 100%;
+    		left: 0;
+    		bottom: 0;
+		}
+	}
+	.ban-txt h1 {
+		font-size: 55px;
+		font-weight: 900;
+		text-align: left;
+		margin-bottom: 18px;
+	}
+	.ban-txt-deep {
+		padding: 0;	
+		p {
+			text-align: left;	
+			margin-top: 0;
+			font-size: 20px;
+		}
+	}	
+}
+
+
+/*----"NUMBERS" SECTOIN----*/
+
+.numbers {
+	.num {
+		h2 {
+			font-size: 70px;
+			font-weight: 900;
+			margin-bottom: -5px;
+		}
+		p {
+			font-size: 25px;
+			font-weight: 600;
+			color: $main-blue;
+		}	
+	}
+}
+
+/*----"FOOTER"---- */
+
+footer {
+	background-color:	$main-grey;
+	.col-head  {
+		h2 {
+			text-transform: uppercase;
+			color: $main-white;
+			font-size: 26px;
+			margin-right: 10px;
+			&:after {
+				content: "";
+				width: 80px;
+				border-bottom: solid 2px;
+				border-color: $main-white;
+				display: inline-block;
+				margin: 0  0 10px 18px;
+			}
+		}
+		p {
+			color: $main-white;	
+			text-align: left;
+			font-size: 18px;
+			font-weight: 200;
+		}
+		i {
+			padding: 5px;
+			margin: 5px;
+			font-size: 20px;
+			background-color: $main-blue;
+			width: 32px;
+			height: 32px;
+			text-align: center;
+			color: $main-white;
+			transition: 0.3s;
+			&:hover {
+				transform: scale(1.10);	
+				color: #000;
+				cursor: pointer;
+			}
+		}	
+	}
+	.row.thin,
+	.row.thin > div {
+		padding: 0;
+		margin: 0;
+		&:nth-child(odd) {
+			p {
+				font-weight: 600;	
+			}	
+		}
+	}
+}
+
+.footer-end {
+	background-color: #252726;
+	height: 80px;
+	text-align: center;
+	padding: 10px;
+	p {
+		font-weight: 600;
+		font-size: 18px;
+		color: $main-white;	
+	}
+}
+
+/* ----MEDIA QUERIES---- */
+
+/* ----FOR DESKTOP---- */
+
+@media (min-width: 768px) {
+	
+	[class*="col-"] {
+		float: left;
+		min-height: 1px;	
+		padding: 16px;
+	}
+}
+
+/* ----FOR MOBILE---- */
+
+@media (max-width: 768px) {
+	
+	[class*="col-"] {
+		float: none;
+		width: 100%;
+		padding: 12px;
+	}	
+	
+	header {
+		nav {
+			text-align: center;
+		}
+		ul {
+			background: $main-grey;
+			min-width: 100%;
+			padding: 0;
+			li {
+				display: block;	
+			}
+		}
+	}
+	
+	.hero {
+		position: relative;
+		width: 100%;
+		height: 500px;
+		.slogan {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			float: none;
+			width: 100%;
+  			text-align: center;
+  			margin: 0;
+  			h1 {
+				font-size: 22px;
+				padding: 0;
+				span {
+					display: block;	
+				}
+			}
+		}
+		
+	}
+	
+	.gallery {
+		.layer {
+			background-color: rgba(0, 0, 0, 0);
+			text-align: center;
+			padding-top: 150px;
+			font-size: 18px;
+			margin-top: 0;
+		}
+		.fa-lg {
+			margin: 0;
+		}
+		.fa-link {
+			margin-right: 60vw;	
+		}
+	}
+		
+	.workers {	
+		.worker {
+			h1::after {
+				display: block;
+				font-weight: 300;
+				border-top: solid 1px;
+				max-width: 200px;
+				margin: 0 auto;
+			}
+			.m-1::after {
+				content: "A Mistake";
+			}
+			.m-2::after {
+				content: "CEO";
+			}
+			.m-3::after {
+				content: "Problems solver";
+			}
+			.m-4::after {
+				content: "Secretary";
+			}
+		}
+	}
+		
+	.banner {
+		.ban-txt {
+			h1 {
+				font-size: calc(16px + 3vw);
+				text-align: center;
+			}
+		}
+		.ban-img {
+			display: none;	
+		}
+	}
+	
+	.numbers {
+		.num {
+			h2 {
+				font-size: 60px;
+				margin: 0;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+	
+	footer {
+		.col-head {
+			p {
+				margin: 5px;
+			}
+			h2 {
+				margin: 10px;	
+			}
+		}
+	}
+}
+ /* ----FOR A FEW MOMENTS BETWEEN---- */
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	header {
+		nav,
+		ul {
+			text-align: center;
+			float: none;
+		}
+	}
+	
+	.hero {
+		.slogan {
+			width: 100%;
+  			text-align: center;
+		}
+	}	
+	
+	footer {
+		.col-head {
+			> h2 {
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+/* ----GRID----*/
+
+section>.container {
+	margin: 50px auto;
+	text-align: center;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*="col-"] {
+	float: left;
+	width: 100%;
+	padding: 16px;
+}
+
+@media (max-width: 767px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
